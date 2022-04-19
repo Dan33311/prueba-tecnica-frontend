@@ -1,11 +1,12 @@
 // import logo from './logo.svg'
 import './App.css'
+import Hotels from './Components/Hotels'
 
 function App() {
 
   return (
     <div className="App">
-      <h1>App working</h1>
+      <Hotels />
     </div>
   )
 }
