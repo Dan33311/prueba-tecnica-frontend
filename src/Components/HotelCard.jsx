@@ -12,9 +12,13 @@ const Hotelcard = ({ image, name, stars, amenities, price }) => {
 
   return (
     <div className="card">
+
       <div className="card-img">
         <img src={`../../src/assets/images/hotels/${image}`} alt="" />
       </div>
+      {/* <div className="cover" style={{ backgroundImage: `../../src/assets/images/hotels/${image}` }}></div> */}
+
+
       {/* <div className="card-body"> */}
         <div className="card-content">
 
