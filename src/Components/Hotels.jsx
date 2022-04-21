@@ -7,7 +7,12 @@ const Hotels = () => {
     <>
       {api.map((hotel) => (
         <Hotelcard 
+          key={hotel.id}
           name={hotel.name}
+          image={hotel.image}
+          price={hotel.price}
+          amenities={hotel.amenities}
+          stars={hotel.stars}
         />
       ))}
     </>

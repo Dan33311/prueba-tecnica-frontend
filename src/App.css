@@ -1,9 +1,16 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
 }
 
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -12,4 +19,93 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.override {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  /* border: 1px solid #000 !important; */
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border: 1px solid #282c34c3; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: fit-content;
+  height: auto;
+  padding: 1.5rem;
+  margin-bottom: 10px;
+  /* outline: 1px solid salmon; */
+}
+.card-img img{
+  width: 360px;
+  /* display: block; */
+  max-height: 320px;
+}
+/* .card-body{
+  display: flex;
+  justify-content: space-around;
+  outline: 1px solid aqua;
+
+} */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 0 1rem 0 1.5rem;
+  width: 420px;
+  /* outline: 1px solid lime; */
+}
+.card-content h3 {
+  color: #005eb8;
+  margin-top: 0.25rem;
+  margin-bottom: 1.1rem;
+  text-align: left;
+  /* outline: 1px soligolden; */
+}
+.card-stars{
+  margin-bottom: 0.5rem;
+}
+.img-svg{
+  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+}
+.card-stars .img-svg{
+  margin: 0 0 0 5px;
+  filter: invert(74%) sepia(92%) saturate(555%) hue-rotate(352deg) brightness(97%) contrast(91%);
+}
+/* .card-amenities{
+  margin-bottom: 0.75rem;
+} */
+
+
+.card-price{
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  width: 200px;
+  /* outline: 1px solid lime; */
+}
+.card-price-desc{
+  color: rgba(0, 0, 0, 0.668);
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.card-price-value{
+  color: rgb(238, 181, 36);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card-price button{
+  background-color: #005eb8;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
 }
