@@ -13,16 +13,16 @@ const Hotelcard = ({ image, name, stars, amenities, price }) => {
   return (
     <div className="card">
 
-      <div className="card-img">
+      {/* <div className="card-img">
         <img src={`../../src/assets/images/hotels/${image}`} alt="" />
-      </div>
-      {/* <div className="cover" style={{ backgroundImage: `../../src/assets/images/hotels/${image}` }}></div> */}
+      </div> */}
+      <div className="cover" style={{ backgroundImage: `url(../../src/assets/images/hotels/${image})` }}></div>
 
 
       {/* <div className="card-body"> */}
         <div className="card-content">
 
-          <h3 className="override">{name}</h3>
+          <h2 className="override">{name}</h2>
 
           <div className="card-stars">
             {[...Array(stars)].map((svg, index) => (

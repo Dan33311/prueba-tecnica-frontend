@@ -28,9 +28,9 @@ $ npm run dev
 ***
 Trabajando en ello
 
-* Aside component.
-* Responsive design.
-* Routes
+[x] Aside component.
+[] Responsive design.
+[] Routes
 
 ### Tercera entrega
 ***
