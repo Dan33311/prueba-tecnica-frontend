@@ -26,7 +26,7 @@ $ npm run dev
 
 ### Segunda entrega
 ***
-Trabajando en ello
+Trabajando en ello:
 
 [x] Aside component.
 [] Responsive design.

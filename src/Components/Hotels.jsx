@@ -4,7 +4,7 @@ import Hotelcard from './HotelCard';
 
 const Hotels = () => {
   return (
-    <>
+    <div className="app-content">
       {api.map((hotel) => (
         <Hotelcard 
           key={hotel.id}
@@ -15,7 +15,7 @@ const Hotels = () => {
           stars={hotel.stars}
         />
       ))}
-    </>
+    </div>
   );
 }
 
