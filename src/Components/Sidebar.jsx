@@ -5,7 +5,6 @@ const Sidebar = () => {
       <div className="sidebar">
 
         <div className="hotel-name-section">
-
           <div className="hotel-title">
             <p className="hotel-name override">Buscar por nombre del hotel</p>
           </div>
@@ -22,7 +21,6 @@ const Sidebar = () => {
 
 
         <div className="hotel-stars">
-
           <div className="hotels-stars-section">
             <img className="star-icon img-svg" src={`../../src/assets/icons/filters/star.svg`} />
             <p className="stars-title">Estrellas</p>
@@ -62,6 +60,12 @@ const Sidebar = () => {
               </label><br />
             </form>
           </div>
+        </div>
+
+        {/* JUST FOR MOBILE VIEW */}
+        <div className="mobile">
+          <img className="search-icon img-svg" src={`../../src/assets/icons/filters/filter.svg`} />
+          <p>Filtrar</p>
         </div>
 
       </div>

@@ -16,24 +16,17 @@ $ npm run dev
 
 ## Mis notas
 ***
-### Primera entrega
+### Entrega
 ✅ Utilizacion de los recursos (assets) proporcionados.
 
 ✅ Consumo de API local (datos en json).
 
 ✅ Maquetacion y estilos de acuerdo a el diseño requerido.
 
+✅ Responsive design.
 
-### Segunda entrega
+
+### Pendiente
 ***
-Trabajando en ello:
-
-[x] Aside component.
-[] Responsive design.
-[] Routes
-
-### Tercera entrega
-***
-Pendiente
 
 * API creada y modelada en backend.

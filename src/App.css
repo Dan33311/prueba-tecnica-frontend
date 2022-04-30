@@ -27,7 +27,7 @@
   /* border: 1px solid #000 !important; */
 }
 
-
+/*  ---  Header  --------------------------------------------- */
 /*  ---  Header  --------------------------------------------- */
 .header{
   width: 100%;
@@ -42,7 +42,7 @@
   text-transform: uppercase;
 }
 
-
+/*  ---  Hotel filters  --------------------------------------- */
 /*  ---  Hotel filters  --------------------------------------- */
 .filters{
   color: gray;
@@ -51,56 +51,45 @@
   text-align: left;
 }
 .sidebar{
+  display: flex;
+  flex-direction: column;
   width: 320px;
   height: fit-content;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
 }
-/* .hotel-name-section{
-} */
 .hotel-title{
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding: 26px 0 4px 24px;
+  padding: 1.625rem 0 0.25rem 1.5rem;
   border-bottom: 1px solid rgb(199, 199, 199);
 }
-/* .hotel-title p{
-  font-weight: 500;
-} */
 .hotel-search{
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding: 40px 0 40px 20px;
+  padding: 2.5rem 0 2.5rem 1.25rem;
   border-bottom: 1px solid rgb(200, 200, 200);
 }
 .hotel-search input{
   border: none;
   border-bottom: 2px solid rgb(200, 200, 200);
-  padding-bottom: 9px;
+  padding-bottom: 0.563rem;
+  margin-right: 1rem;
   height: 1.25rem;
 }
 .hotel-search input:focus {
-  /* outline-style: hidden;  */
-  /* outline-offset: -2px; */
   outline-color: rgb(255, 255, 255); 
 }
 .search-icon{
-  padding-right: 12px;
+  padding-right: 0.75rem;
 }
 .hotel-name{
   text-align: left;
   padding-bottom: 1rem;
 }
-/* .hotel-icon{
-  outline: 1px solid aqua;
-} */
-/* .hotel-input{
-  outline: 1px solid blueviolet;
-} */
-
 
 .hotel-stars{
   align-items: center;
@@ -110,12 +99,9 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding: 9px 0 6px 20px;
+  padding: 0.563rem 0 0.375rem 1.25rem;
   border-bottom: 1px solid rgb(200, 200, 200);
 }
-/* .star-icon{
-  outline: 1px solid salmon;
-} */
 .hotel-stars p{
   margin-left: 0.75rem;
 }
@@ -125,7 +111,7 @@
   justify-content: start;
   align-items: flex-start;
   text-align: left;
-  padding: 40px 0 60px 22px;
+  padding: 2.5rem 0 3.75rem 1.375rem;
 }
 .stars-check .img-svg{
   filter:
@@ -137,13 +123,17 @@
     contrast(91%);
 }
 .stars-check input[type="checkbox"]{
-  margin-bottom: 20px;
-  margin-right: 12px;
-  width: 18px;
-  height: 18px;
+  margin-bottom: 1.25rem;
+  margin-right: 0.75rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.mobile{
+  display: none;
 }
 
 
+/*  ---  Hotels view  --------------------------------------- */
 /*  ---  Hotels view  --------------------------------------- */
 .card {
   display: flex;
@@ -155,12 +145,9 @@
   height: auto;
   padding: 1.5rem;
   margin-top: 1rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
 }
-/* .card-img img{
-  width: 360px;
-  max-height: 320px;
-} */
 .cover{
   width: 380px;
   height: 240px;
@@ -182,17 +169,16 @@
   margin-bottom: 1.1rem;
   text-align: left;
 }
-
 .card-stars{
   margin-bottom: 0.5rem;
 }
 .img-svg{
-  margin: 0 5px;
-  height: 20px;
-  width: 20px;
+  margin: 0 0.313rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .card-stars .img-svg{
-  margin: 0 0 0 5px;
+  margin: 0 0 0 0.313rem;
   filter:
     invert(74%) 
     sepia(92%) 
@@ -201,9 +187,6 @@
     brightness(97%) 
     contrast(91%);
 }
-/* .card-amenities{
-  margin-bottom: 0.75rem;
-} */
 
 .card-price{
   margin-right: 1rem;
@@ -226,4 +209,164 @@
   font-size: 0.85rem;
   font-weight: 500;
   padding: 0.75rem 1.5rem;
+}
+
+
+/*  ---  RESPONSIVE  ---------------------------------------------- */
+/*  ---  RESPONSIVE  ---------------------------------------------- */
+
+@media only screen and (max-width: 1390px) {
+  .sidebar{
+    width: 260px;
+  }
+  .card-content {
+    width: 300px;
+  }
+  .card-price{
+    margin-right: 0;
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .app-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .side{
+    display: flex;
+  }
+  .filters{
+    display: none;
+  }
+  .sidebar{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 948px;
+    height: 60px;
+  }
+  .hotel-name-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    height: 60px;
+  }
+  .hotel-title{
+    border: none;
+    border-right: 1px solid rgb(199, 199, 199);
+    padding-right: 1.875rem;
+  }
+  .hotel-search{
+    height: 60px;
+    padding: 0;
+    padding-left: 1.25rem;
+    padding-right: 3.75rem;
+    border: none;
+    border-right: 1px solid rgb(199, 199, 199);
+  }
+  .hotel-search input{
+    padding-bottom: 0.188rem;
+    padding-left: 0.563rem;
+  }
+  .hotels-stars-section{
+    border: none;
+    padding-right: 1.875rem;
+  }
+  .stars-check{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .app-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .header{
+    text-align: center;
+  }
+  .header h1{
+    padding-left: 0;
+  }
+  .sidebar{
+    margin-top: 0.625rem;
+    flex-direction: row-reverse;
+    width: 468px;
+  }
+  .hotel-title{
+    display: none;
+  }
+  .hotel-search{
+    display: none;
+  }
+  .hotels-stars-section{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    padding-left: 1.25rem;
+    align-items: center;
+    color: #005eb8;
+  }
+  .mobile img{
+    filter: 
+      invert(20%) 
+      sepia(95%) 
+      saturate(4053%) 
+      hue-rotate(198deg) 
+      brightness(87%) 
+      contrast(101%);
+  }
+  .card {
+    padding: 1.5rem 2.75rem 1.5rem 2.75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-content {
+    margin: 0;
+    width: auto;
+    align-self: flex-start;
+  }
+  .card-content h2 {
+    margin-bottom: 0.75rem;
+  }
+  .card-price{
+    width: auto;
+    margin-top: 2.5rem;
+  }
+  .card-price button{
+    width: 260px;
+    border-radius: 0.188rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar{
+    margin-top: 0.625rem;
+    flex-direction: row-reverse;
+    width: 360px;
+  }
+  .card {
+    width: 340px;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .cover{
+    width: 300px;
+  }
+  .card-content {
+    margin-left: 1.25rem;
+  }
+  .card-price-desc{
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For tablet: */
+}
+@media only screen and (max-width: 640px) {
+  /* For mobile: */
 }
